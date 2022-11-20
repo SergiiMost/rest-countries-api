@@ -1,0 +1,30 @@
+.navbar {
+  background-color: var(--elements);
+}
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.navbarModeWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  & span {
+    font-weight: 600;
+    margin-left: 8px;
+    color: var(--text);
+  }
+}
+
+.navbarIcon {
+  color: var(--text);
+}
+
+.navbarHeading {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}

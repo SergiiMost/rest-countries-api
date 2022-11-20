@@ -1,0 +1,49 @@
+.filterOptions {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.countrySearch,
+.regionSelect {
+  background-color: var(--elements);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  padding: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.countrySearch {
+  padding-left: 32px;
+  width: 350px;
+}
+
+.iconSearch {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  color: var(--text);
+}
+
+@media screen and (max-width: 620px) {
+  .filterOptions {
+    flex-direction: column;
+  }
+
+  .searchContainer {
+    margin-bottom: 10px;
+  }
+}
